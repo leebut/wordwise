@@ -9,7 +9,9 @@ function CityList({ cities, isLoading }) {
   }
 
   if (!cities.length)
-    return <Message message="Click on the map to adda  city to the list." />;
+    return (
+      <Message message="Click on the map to add a 🏙️ city 🏙️ to the list." />
+    );
 
   console.log(cities);
   return (
