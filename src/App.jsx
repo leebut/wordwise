@@ -35,7 +35,7 @@ function App() {
   }, []);
   return (
     <>
-      <BrowserRouter basename="/app" future={{ v7_startTransition: true }}>
+      <BrowserRouter basename="/ww" future={{ v7_startTransition: true }}>
         <Routes>
           {/* <Route path={"/"} element={<Home />} /> */}
           <Route index element={<Home />} />
@@ -51,7 +51,7 @@ function App() {
               path="cities"
               element={<CityList cities={cities} isLoading={isLoading} />}
             />
-            <Route path="cities:/id" element={<City />} />
+            <Route path="cities/:id" element={<City />} />
             <Route
               path="countries"
               element={<CountryList cities={cities} isLoading={isLoading} />}
