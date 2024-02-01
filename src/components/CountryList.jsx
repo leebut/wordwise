@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Spinner from "./Spinner";
 import styles from "./CountryList.module.css";
 import CountryItem from "./CountryItem";
@@ -25,7 +26,7 @@ function CountryList({ cities, isLoading }) {
     <div>
       <ul className={styles.countryList}>
         {countries.map((country) => (
-          <CountryItem country={country} />
+          <CountryItem country={country} key={country.country} />
         ))}
       </ul>
     </div>
